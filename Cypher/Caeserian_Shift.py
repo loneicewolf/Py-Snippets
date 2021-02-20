@@ -10,6 +10,8 @@ def caeser_shift(m,k):
     i=0
     for c in m:
         print(m[(i+k)%len(m)])#modulo[len(m)]
+        #For non-newliners:
+        #print(m[(i+k)%len(m)])#modulo[len(m)]
         i+=1
     
     return ctx
