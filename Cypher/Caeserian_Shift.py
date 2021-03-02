@@ -1,23 +1,10 @@
-### Caeserian_Shift Python3 Implementation
-
-# ----------------------------------------- #
-
-
-def caeser_shift(m,k):
-    ctx=""
-    #m="hello"
-    #k=3
+def csr(m,k):
     i=0
-    for c in m:
-        print(m[(i+k)%len(m)])#modulo[len(m)]
-        #For non-newliners:
-        #print(m[(i+k)%len(m)])#modulo[len(m)]
+    RL=[]
+    for l in m:
+        RL.append(m[(i+k)%len(m)])
         i+=1
-    
-    return ctx
+    return RL
 
-
-
-
-# caeser_shift("abc",24) -> a b c 
-# caeser_shift("abc",9124) -> b c a
+# usage:
+csr("abc",2) # ['c', 'a', 'b']
