@@ -1,6 +1,5 @@
 csr = lambda m,k:[(chr(ord(m[(i+k)%len(m)]))) for i in range(0,len(m))]
 m=[chr(i) for i in range(ord('a'),ord('z')+1)]
-m="abcdefghijklmnopqrstuvwxyz"
 
 i=0
 k=0
